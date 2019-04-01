@@ -63,7 +63,7 @@ This step must be carried out if the new Test involves a new View that is not pr
 2. Create a TestNG run configuration
   - **Test kind**: Suite
   - **Suite**: [location of the test suite]
-  (This has to be done manually in the current implementation)
+  (**_This has to be done manually in the current implementation_**. The tests will not run unless this part of the setup is done using the Run Configurations.)
   - **Use classpath of module**: [the project root]
 
 3. Run the configuration.
