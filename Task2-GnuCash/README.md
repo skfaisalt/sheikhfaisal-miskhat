@@ -69,3 +69,13 @@ This step must be carried out if the new Test involves a new View that is not pr
 3. Run the configuration.
   - By default, all tests will be executed following priority.
   - To allow test execution based on a specific priority, comment the ones that are not required. Fresh launch tests must not be commented. Incase this is required, ensure to launch app and finish the configuration wizard on app launch manually.
+
+
+#### Limitations ####
+Automating tests for the given app has indeed been cumbersome since the developers did not maintain a neat list of accessibility, resource and element identifiers. In several occasions, xPath resource needed to be used to reference the elements.
+
+### Scalability ###
+he architecture of the project is highly scalable. Since TestNG is used, multiple test suites can be designed and tests can just run in parallel devices.
+
+### Reports
+A light weight cucumber report is generated after execution and can be located under
