@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="GnuCash-Android-Test-Suite" parallel="tests" thread-count="2">
+
+    <!--Huawei Settings-->
+    <test name="Test-Huawei-VTR-L9">
+        <parameter name="deviceName" value="VTR-L9" />
+        <parameter name="platformVersion" value="8.0" />
+
+        <classes>
+
+            <!--fresh-launch-->
+            <class name="com.faisal.tests.cucumber.tests.FreshLaunchTest" />
+
+            <!--prio-high-->
+            <class name="com.faisal.tests.cucumber.tests.TestHighPrioFeatures" />
+
+            <!--prio-medium-->
+            <class name="com.faisal.tests.cucumber.tests.TestMediumPrioFeatures" />
+
+            <!--prio-low-->
+            <class name="com.faisal.tests.cucumber.tests.TestLowPrioFeatures" />
+
+        </classes>
+
+    </test>
+
+
+
+</suite>
